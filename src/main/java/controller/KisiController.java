@@ -33,7 +33,7 @@ public class KisiController {
 	public Kisi yeniKisiEkle(@RequestBody Kisi kisi) {
 		return kisiService.kisiEkle(kisi);
 	}
-	@GetMapping(path="/{id}")
+	@GetMapping(path="/ara/{id}")
 	public Optional<Kisi> idIleKisiListele(@PathVariable Integer id) {
 		return kisiService.idIleKisiGetir(id);
 	}
